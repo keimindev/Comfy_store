@@ -1,0 +1,11 @@
+.footer{
+    background-color: teal;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer h5 span{
+  margin: 0 5px;
+  color: rgb(136, 201, 201);
+}
