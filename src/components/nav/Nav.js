@@ -2,9 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './nav.css'
 import { ShoppingCart, AccountCircle, Menu } from '@material-ui/icons'
+import { useProductsContext } from '../../context/productsContext'
 
 
 function Nav() {
+    const {openSidebar} = useProductsContext()
     return (
         <>
         <div className="navbar-container">
@@ -38,7 +40,7 @@ function Nav() {
 
                 </div>
             </div>
-            <button type="button" className="nav-toggle"><Menu /></button>
+            <button type="button" className="nav-toggle" onClick={openSidebar}><Menu /></button>
 
         </div>
 
