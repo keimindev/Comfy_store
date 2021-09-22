@@ -9,7 +9,7 @@ function Sidebar() {
     const {isSidebarOpen, closeSidebar} = useProductsContext()
     
     return (
-        <div className={`${isSidebarOpen ? 'sidebar-container show-sidebar' : 'show-sidebar'}`}>
+        <div className={`${isSidebarOpen ? 'sidebar-container show-sidebar' : 'sidebar-container'}`}>
             <div className="sidebar-top">
                 <div>Comfy</div>
                 <button className="close-btn" onClick={closeSidebar}><Close /></button>

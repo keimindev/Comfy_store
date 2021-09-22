@@ -1,0 +1,11 @@
+.pagehero-container{
+    padding: 50px 10%;
+    background-color: teal;
+    color: #fff;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.pagehero-container a {
+    color : #fff;
+}

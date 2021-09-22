@@ -14,3 +14,18 @@ a:active{
     text-decoration: none;
     color: #222;
 }
+
+.section-center {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+  }
+
+.btn{
+    padding: 8px 12px;
+    background-color: teal;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
