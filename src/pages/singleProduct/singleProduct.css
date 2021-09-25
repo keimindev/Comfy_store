@@ -1,0 +1,55 @@
+.page{
+    padding: 2rem 0;
+}
+.page .back-btn{
+    color: #fff;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.singleproduct-container{
+    display: grid;
+    gap: 4rem;
+    margin-top: 30px;
+}
+
+.singleproduct-content h2{
+    color: teal;
+    margin: 10px 0;
+
+}
+
+.singleproduct-content .price{
+    color: teal;
+    font-weight: bold;
+}
+
+.desc {
+    line-height: 2;
+    max-width: 670px;
+    font-weight: 500;
+}
+.info {
+    text-transform: capitalize;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    margin: 15px;
+}
+
+.info span {
+    font-weight: 700;
+}
+
+.singleproduct-container hr{
+    border: 1px solid #eee;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+    .singleproduct-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }   
+}

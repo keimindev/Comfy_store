@@ -1,10 +1,11 @@
 import React from 'react'
 
-
-export default function ProductsList() {
+function AddToCart() {
     return (
         <div>
-            it's product
+            add to cart
         </div>
     )
 }
+
+export default AddToCart

@@ -1,0 +1,29 @@
+.featured-container{
+    background-color: rgb(201, 220, 241, 0.3);
+    padding: 3rem 0;
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+
+.featured-container .underline{
+    margin: 10px auto;
+}
+
+
+.featured{
+    margin: 4rem auto;
+    display: grid;
+    gap: 2.5rem;
+}
+
+.featured img {
+    height: 225px;
+  }
+
+
+@media screen and (min-width: 576px){
+    .featured{
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+}

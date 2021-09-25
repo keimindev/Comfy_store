@@ -1,0 +1,51 @@
+.product-container{
+    position: relative;
+
+}
+
+.product-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-container .Link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: teal;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+} 
+
+.product-container:hover img {
+    opacity: 0.5;
+  }
+.product-container:hover .Link {
+    opacity: 1;
+}
+
+.product-container--footer {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.product-container--footer h5,p{
+    margin-bottom:0;
+    font-weight: bold;
+}
+
+.product-container--footer p{
+    color: teal;
+}
