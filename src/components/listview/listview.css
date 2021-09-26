@@ -1,0 +1,49 @@
+.listview-container{
+    display:grid;
+    row-gap: 40px;
+
+}
+
+
+
+.listview-container img {
+    width: 100%;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+  }
+.listview-container h4 {
+    margin-bottom: 0.5rem;
+  }
+.listview-container  .price {
+    color: var(--clr-primary-6);
+    margin-bottom: 0.75rem;
+  }
+
+.detail-btn{
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+}
+
+.listview-container p {
+    max-width: 45em;
+    margin-bottom: 1rem;
+  }
+
+
+
+  @media (min-width: 992px) {
+    .listview-container article {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 30px;
+      align-items: center;
+    }
+
+    .listview-container img{
+        width: 300px;
+    }
+}

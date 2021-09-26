@@ -1,0 +1,20 @@
+.gridview-container{
+    display: grid;
+    gap: 30px 20px;
+}
+
+img{
+    height: 175px;
+}
+
+
+@media (min-width: 992px) {
+    .gridview-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+@media (min-width: 1170px) {
+    .gridview-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

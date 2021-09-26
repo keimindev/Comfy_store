@@ -1,10 +1,11 @@
 import React from 'react'
 
-
-export default function ProductsList() {
+function Filter() {
     return (
         <div>
-            it's product
+            filter
         </div>
     )
 }
+
+export default Filter

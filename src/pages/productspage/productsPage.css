@@ -1,0 +1,11 @@
+.products-content{
+    display: grid;
+    gap: 3rem 1.5rem;
+    margin: 30px auto;
+}
+
+@media (min-width: 768px) {
+    .products-content{
+        grid-template-columns: 200px 1fr;
+    }
+}
