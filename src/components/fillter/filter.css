@@ -1,0 +1,96 @@
+.form-control{
+    margin: 15px 0;
+}
+
+.search-input{
+    background-color: rgba(0, 128, 128, 0.1);
+    border: none;
+    padding: 8px 0;
+    text-indent: 5px;
+    outline: none;
+
+}
+.search-input::placeholder {
+    text-transform: capitalize;
+    color: teal;
+  }
+
+.form-control h5{
+    color: rgb(0, 83, 83);
+}
+
+.form-btns{
+    display: flex;
+    flex-direction: column;
+}
+.form-btns button{
+    border: none;
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+    margin: 6px 0px;
+    color: teal;
+    outline: 0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+    
+}
+
+.cate-active{
+    border-color: red;
+}
+
+.company{
+    margin-top: 10px;
+}
+.colors{
+    margin-bottom: 10px;
+}
+.color-btn{
+    border: 0;
+    border-radius: 50%;
+    margin-top: 10px;
+    background: #222;
+}
+
+.all-btn{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: rgba(0, 128, 128, 0.5);
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+
+}
+
+.all-btn-active{
+    border-color: teal;
+    color: teal;
+}
+
+input[range]{
+    outline: none;
+}
+
+.shipping{
+    align-items: center;
+}
+
+.shipping label{
+    margin-right: 10px;
+}
+
+.shipping input{
+    cursor: pointer;
+}
+
+.clear-btn{
+background-color: rgb(185, 0, 0);
+padding: 8px 20px;
+margin-top: 20px;
+text-transform: capitalize;
+letter-spacing: 2px;
+}
