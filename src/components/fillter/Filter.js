@@ -42,11 +42,12 @@ function Filter() {
                     <div className="form-btns">
                         {categories.map( (c, index) => { 
                             return(
-                                <button type="button" 
+                                <button 
+                                type="button" 
                                 key={index}
                                 onClick={updateFilters}
                                 name="category"
-                                className={ `${category === c.toLowerCase() ? 'active' : null }`}>
+                                className={ `${category === c.toLowerCase() ? 'cate-active' : null }`}>
                                     {c}
                                 </button>
                             )
@@ -71,9 +72,10 @@ function Filter() {
                         {colors.map((c, index) => {
                             if(c === 'all'){
                                 return <button 
-                                name="color" onClick={updateFilters} 
-                                data-color="all"
-                                className={`${color === 'all' ? 'all-btn all-btn-active': 'all-btn'}`}
+                                        name="color" 
+                                        onClick={updateFilters} 
+                                        data-color="all"
+                                        className={`${color === 'all' ? 'all-btn all-btn-active': 'all-btn'}`}
                                 >All</button>
                             }
                             return <button 
@@ -85,7 +87,7 @@ function Filter() {
                             data-color={c}
                             style={{background:c}}
                             onClick={updateFilters}
-                            >{color === c? <Check className="icon"/> : null}</button>
+                            >{ color === c? <Check className="icon"/> : null }</button>
                        })}
                     </div>
                 </div>

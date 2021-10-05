@@ -77,7 +77,7 @@ function filterReducer(state, action) {
 
     if(action.type===UPDATE_FILTERS){
         const {name, value} = action.payload
-        return {...state,filters:{ ...state.filters, [name]:value}}
+        return {...state, filters:{ ...state.filters, [name]:value}}
     }
 
     if(action.type === FILTER_PRODUCTS){
@@ -126,7 +126,7 @@ function filterReducer(state, action) {
             tempProducts = tempProducts.filter((product) => product.shipping === true)
         }
 
-        return {...state, filtered_products:tempProducts}
+        return {...state, filter_products:tempProducts}
     }
 
     if(action.type === CLEAR_FILTERS){

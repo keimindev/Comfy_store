@@ -1,0 +1,23 @@
+.page-100{
+    text-align: center;
+    height: 85vh;
+    padding: 15% 0;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.page-100 a{
+    color: #fff;
+}
+
+.page-100 h2{
+    margin-bottom: 50px;
+}
+
+.fill-btn{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 2px 10px;
+   
+}

@@ -25,6 +25,20 @@
 
 }
 
+
+.sort-input {
+  border-color: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+}
+.sort-container  label {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+
 .sort-container p{ font-size: 14px; }
 
 @media (max-width: 576px) {
@@ -64,33 +78,9 @@
     column-gap: 0.5rem;
    }   
 
-.sort-container button {
-      background: transparent;
-      border: 1px solid var(--clr-black);
-      color: var(--clr-black);
-      width: 1.5rem;
-      border-radius: var(--radius);
-      height: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
 .view-btn-active {
       background-color: teal;
       color: #fff;
 }
-
-.sort-input {
-    border-color: transparent;
-    font-size: 1rem;
-    text-transform: capitalize;
-    padding: 0.25rem 0.5rem;
-  }
-.sort-container  label {
-    font-size: 1rem;
-    text-transform: capitalize;
-  }
 
 }

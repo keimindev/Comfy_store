@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Check, Add, Remove } from '@material-ui/icons'
+import { useCartContext } from '../../context/CartContext'
 import './addtocart.css'
 
 function AddToCart({product}) {
+    const { addToCart } = useCartContext()
     const { id, stock, colors } = product
 
     const [mainColor, setMainColor] = useState(colors[0]);
@@ -44,7 +46,9 @@ function AddToCart({product}) {
                 <span>{amount}</span>
                 <span onClick={() => decrease()}><Remove className="icon"/></span>
             </div>
-            <button className="btn add-btn">Add to Cart</button>
+            <Link to="/cart">
+            <button className="btn add-btn" onclick={ () => addToCart(id, mainColor, amount, product)}>Add to Cart</button>
+            </Link>
         </div>
     )
 }
