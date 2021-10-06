@@ -1,0 +1,31 @@
+.link-container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.link-container a{ color: #fff; }
+
+.link-btn{
+    background-color: rgb(5, 197, 197);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.clear-cart-btn{
+    background-color: #222;
+    border: 0;
+    outline: none;
+    padding: 5px 8px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 0;
+    font-size: 15px;
+}

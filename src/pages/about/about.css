@@ -1,6 +1,6 @@
 .about{
     width: 80%;
-    height: 90vh;
+    height: 70vh;
     margin: 0 auto;
 
     display: flex;
@@ -51,6 +51,8 @@
 
 .about .img img{
     width: 500px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about article{

@@ -1,38 +1,54 @@
 .listview-container{
     display:grid;
     row-gap: 40px;
-
+    align-items: center;
 }
-
-
 
 .listview-container img {
     width: 100%;
     display: block;
     height: 200px;
     object-fit: cover;
-    border-radius: var(--radius);
+    border-radius: 5px;
     margin-bottom: 1rem;
   }
+
 .listview-container h4 {
-    margin-bottom: 0.5rem;
-  }
-.listview-container  .price {
-    color: var(--clr-primary-6);
+  margin-top: 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.listview-container h5{
+  font-size: 16px;
+}
+
+.listview-container .price {
+    color: teal;
     margin-bottom: 0.75rem;
   }
 
+
+.listview-container a{
+  color: #fff;
+}
 .detail-btn{
-    font-size: 0.6rem;
-    padding: 0.25rem 0.5rem;
+    font-size: 15px;
+    padding: 3px 8px;
     color: #fff;
 }
+
 
 .listview-container p {
     max-width: 45em;
     margin-bottom: 1rem;
     font-weight: normal;
-  }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 라인수 */
+    -webkit-box-orient: vertical;
+}
 
 
 
@@ -47,4 +63,10 @@
     .listview-container img{
         width: 300px;
     }
+
+    .listview-container h4 {
+      margin-top: -20px;
+    }
+    
+
 }

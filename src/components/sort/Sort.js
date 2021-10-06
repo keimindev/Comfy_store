@@ -1,6 +1,6 @@
 import React from 'react'
 import { useFilterContext } from '../../context/filterContext'
-import { GridView, ViewAgenda, ViewList } from '@material-ui/icons';
+import { ViewList, ViewComfy } from '@material-ui/icons';
 import './sort.css'
 
 
@@ -11,7 +11,7 @@ function Sort() {
         <div className="sort-container"> 
             <div className="btn-container">
                 <button type="button" 
-                className={`${grid_view ? "view-btn view-btn-active" : "btn view-btn"}`} onClick={setGridView}><ViewAgenda/></button>
+                className={`${grid_view ? "view-btn view-btn-active" : "btn view-btn"}`} onClick={setGridView}><ViewComfy/></button>
                 <button type="button" className={`${grid_view ? "view-btn" : "view-btn view-btn-active"}`} onClick={setListView}><ViewList/></button>
             </div>
             <p>{products.length} products found</p>

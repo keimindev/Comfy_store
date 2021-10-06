@@ -10,12 +10,12 @@
 
 .product-container .Link{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
 
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: teal;
     color: #fff;
@@ -44,8 +44,12 @@
 .product-container--footer h5,p{
     margin-bottom:0;
     font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .product-container--footer p{
     color: teal;
+    font-weight: 700;
+    font-size: 16px;
 }

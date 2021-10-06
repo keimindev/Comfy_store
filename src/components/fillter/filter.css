@@ -100,7 +100,7 @@ input[range]{
 }
 
 .clear-btn{
-background-color: rgb(185, 0, 0);
+background-color: tomato;
 padding: 8px 20px;
 margin-top: 20px;
 text-transform: capitalize;

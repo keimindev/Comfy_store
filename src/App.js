@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Products from "./pages/productspage/ProductsPage";
 import CartPage from "./pages/cartPage/CartPage";
 import SingleProduct from "./pages/singleProduct/SingleProduct"
+import Login from "./pages/login/Login";
 import Error  from "./components/error/Error"
 import Nav from "./components/nav/Nav"
 import Sidebar from "./components/sidebar/Sidebar"
@@ -31,9 +32,9 @@ function App() {
           <Products/>
         </Route>
         <Route exact path="/products/:id" children = {<SingleProduct/>}/>
-        {/* <Route exact path="/checkout">
-          <Checkout/>
-        </Route> */}
+        <Route exact path="/login">
+          <Login/>
+        </Route>
         <Route exact path="*">
           <Error />
         </Route>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Check, Add, Remove } from '@material-ui/icons'
 import { useCartContext } from '../../context/CartContext'
 import './addtocart.css'
+import AmountButton from '../amountbutton/AmountButton'
 
 function AddToCart({product}) {
     const { addToCart } = useCartContext()
@@ -12,16 +13,24 @@ function AddToCart({product}) {
     const [amount, setAmount] = useState(1);
     
     const increase = () => {
-        setAmount( amount + 1)
-
+        setAmount( (oldAmount) => {
+            let tempAmount = oldAmount + 1;
+            if( tempAmount > stock){
+                tempAmount = stock
+            }
+            return tempAmount
+        })
     }
 
     const decrease = () => {
-        if(amount > 1){
-            setAmount( amount-1)
-        }else{
-            setAmount(amount)
-        }
+        setAmount( (oldAmount) => {
+            let tempAmount = oldAmount -1;
+            if(tempAmount < 1){
+                tempAmount = 1
+            }
+            return tempAmount
+
+        })
     }
 
 
@@ -41,13 +50,9 @@ function AddToCart({product}) {
                 })}
                 </p> 
             </p>
-            <div className="amount-container">
-                <span onClick={() => increase()}><Add className="icon"/></span>
-                <span>{amount}</span>
-                <span onClick={() => decrease()}><Remove className="icon"/></span>
-            </div>
+            <AmountButton increase={increase} decrease={decrease} amount={amount} />
             <Link to="/cart">
-            <button className="btn add-btn" onclick={ () => addToCart(id, mainColor, amount, product)}>Add to Cart</button>
+            <button className="btn add-btn" onClick={ () => addToCart(id, mainColor, amount, product)}>Add to Cart</button>
             </Link>
         </div>
     )

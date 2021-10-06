@@ -24,26 +24,44 @@
     justify-content: space-between;
 }
 
+.sidebar-top .logo{
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 .close-btn{
     background-color: transparent;
     border: 0;
     color: teal;
-    font-weight: 700;
-    font-size: 15px;
 
     cursor: pointer;
 }
 
+.close-btn .icon{
+    font-size: 30px;
+    font-weight: 600;
+}
+
 
 .sidebar-middle{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .sidebar-middle a div{
-    margin: 20px 0;
-    font-size: 14px;
+    padding: 10px 10px;
+    font-size: 15px;
     color: teal;
-    
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+.sidebar-middle a div:hover{
+    padding: 10px 10px;
+    padding-left: 30px;
+    font-weight: 600;
 }
 
 .sidebar-bottom{
@@ -67,7 +85,9 @@
     margin: 0 30px;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
    }
+
 
    
    @media screen and (min-width: 992px) {

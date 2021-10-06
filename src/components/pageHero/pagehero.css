@@ -4,8 +4,14 @@
     color: #fff;
     margin: 10px 0;
     text-transform: uppercase;
+    
 }
 
 .pagehero-container a {
     color : #fff;
+    font-weight: bold;
+}
+
+.pagehero-container h4{
+    font-weight: bold;
 }

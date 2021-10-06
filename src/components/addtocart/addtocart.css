@@ -1,5 +1,6 @@
 .colors{
     display: flex;
+    align-items: center;
 }
 
 .colors span{
@@ -8,14 +9,13 @@
 
 .colors p{
     margin-left: 40px;
-    border: 1px solid red;
-
+    display: flex;
+    align-items: center;
 }
 
 .color-btn{
-    width: 22px;
-    height: 22px;
-    text-align: center;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: #222;
     color: #fff;
@@ -35,15 +35,14 @@
 
 .btn-active{
     opacity: 1;
-}
 
+}
 
 
 .amount-container{
     height: 50px;
     display: flex;
     flex-direction: row;
-
     align-items: center;
 }
 

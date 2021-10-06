@@ -32,7 +32,9 @@
   text-transform: capitalize;
   padding: 0.25rem 0.5rem;
   outline: none;
+  cursor: pointer;
 }
+
 .sort-container  label {
   font-size: 1rem;
   text-transform: capitalize;

@@ -1,22 +1,35 @@
 .navbar-container{
     width: 80vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto; 
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 20px;
-    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.nav a {
+    font-weight: 600;
 }
 
 .logo{
-    flex:3;
-    box-sizing: border-box;
+    width: 130px;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 .menu{
-    flex:4;
     display: flex;
     flex-direction: row;  
+    justify-content: center;
 }
 
 .menu>a>div{
@@ -56,26 +69,46 @@
     left: 15px;
 }
 
+.icons p{
+    font-weight: 600;
+}
 
 .nav-toggle{
     background-color: transparent;
     border: 0;
     color: teal;
     cursor: pointer;
-    font-size: 1.2rem;
+    position:absolute;
+    top: 20px;
+    right: 25px;
+
     display: none;
+
+}
+
+.nav-toggle .icon{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 
 @media (max-width: 991px){
+    .nav{
+        margin-bottom: 80px;
+    }
     .nav-toggle{
         display : block;
+    }
+
+    .logo{
+        width: 100px;
     }
 
     .menu,
     .icons{
         display: none;
     }
+
 
 }
 

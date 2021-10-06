@@ -6,6 +6,7 @@ function GridView({products}) {
     return (
         <div className="gridview-container">
             {products.map((product) => {
+                console.log(product)
                 return <Product key={product.id} {...product} />
             })}
             
