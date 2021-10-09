@@ -16,12 +16,13 @@ function Services() {
             <div className="service-bottom">
                 <ul>
             {services.map( (service) => {
+                const { id, icon, title, desc } = service
                 return(
                     <>
-                    <li key={service.id}>
-                    <div className="service-icon">{service.icon}</div>
-                    <div className="service-title">{service.title}</div>
-                    <div className="service-desc">{service.desc}</div>
+                    <li key={id}>
+                    <div className="service-icon">{icon}</div>
+                    <div className="service-title">{title}</div>
+                    <div className="service-desc">{desc}</div>
                     </li>
                     </>
                 )

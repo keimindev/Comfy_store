@@ -1,6 +1,5 @@
 import React, { useContext, useReducer, useEffect } from 'react';
 import reducer from '../reducer/productsReducer';
-import firebase from '../firebase';
 import axios from 'axios';
 import { products_url as url } from '../utils';
 import {

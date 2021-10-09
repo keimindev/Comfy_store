@@ -2,15 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import firebase from './firebase';
 import { ProductsProvider } from './context/productsContext'
 import { FilterProvider } from './context/filterContext'
 import { CartProvider } from './context/CartContext';
 import { AuthProvider } from './context/AuthContext';
-console.log(firebase)
+import { Auth0Provider } from "@auth0/auth0-react";
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0Provider
+    domain="dev-6w74uhrd.us.auth0.com"
+    clientId="cTJwF0Gimh9ffV4HG98Kt5WzJAIV2Nhi"
+    redirectUri={window.location.origin}
+    cacheLocation='localstorage'
+  >
     <AuthProvider>
     <ProductsProvider>
       <FilterProvider>
@@ -20,6 +26,6 @@ ReactDOM.render(
       </FilterProvider>
     </ProductsProvider>
     </AuthProvider>
-  </React.StrictMode>,
+  </Auth0Provider>,
   document.getElementById('root')
 );

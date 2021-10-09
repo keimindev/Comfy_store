@@ -29,3 +29,8 @@ a:active{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.loading-page{
+    height: 100vh;
+    text-align: center;
+}
