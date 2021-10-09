@@ -3,7 +3,9 @@ import React from 'react'
 function Loading() {
     return (
         <div className="section-center">
-            <div className="loading">it's loading</div>
+            <div className="loading-page">
+                <h1>Loading</h1>
+            </div>
         </div>
     )
 }
